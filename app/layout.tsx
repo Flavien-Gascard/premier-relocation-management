@@ -15,7 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    //Daisy UI data-theme is defined in tailwind.config.ts
+    <html lang="en" data-theme="cupcake">
       <body className={inter.className}>{children}</body>
     </html>
   );

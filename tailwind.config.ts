@@ -15,6 +15,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  // Daisy UI - Extension of packages for use with tailwind
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light","dark",'cupcake'],
+  }
 };
 export default config;

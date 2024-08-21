@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import ContactUs from "./contactUs/page";
+import { routeModule } from "next/dist/build/templates/app-page";
 // import ContactCard from "./components/ContactCard";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24" >
       <h1>Premier Relocation Management</h1>
       <p>Licensed•Bonded•Insured</p>
       <p>Serving the Pensacola Metropolitan Area!</p>
@@ -31,14 +32,13 @@ export default function Home() {
         <li> - Coordinating address change notifications (postal service, banks, subscriptions, etc.)</li>
       </ul>
 
-      <Link href='/contactUs'>Contact Us</Link>
+
+      <Link href='/contactUs'><button className='btn btn-primary'>Contact Us!</button></Link>
+      
 
 
 <p>-----------------------------------</p>
 
-
-
-{/* <ContactCard /> */}
 
     </main>
   );
